@@ -1,4 +1,8 @@
 # Algo. and DS
-Record simple algo. and DS what I've learned
+Record simple algo. and DS what I've learned, implementing with `cpp` and `python`.
 
-1. [Union_Find](Union-Find/)
+## Data Structure
+1. [Union_Find](DS/Union-Find/)
+
+## Algo.
+1. [Binary_Search](Algo/Binary_Search/)
