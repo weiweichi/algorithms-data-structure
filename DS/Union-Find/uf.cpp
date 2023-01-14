@@ -1,7 +1,6 @@
 #include <vector>
 using namespace std;
 
-
 class Union_Find {
 public:
     Union_Find(int n) {
@@ -44,7 +43,6 @@ public:
     Union_Find_lazy(int n) {
         for (int i = 0; i < n; ++i) {
             par.push_back(i);
-            rank.push_back(0);
         }
     }
     ~Union_Find_lazy() {
