@@ -7,3 +7,4 @@ Record simple algo. and DS what I've learned, implementing with `cpp` and `pytho
 
 ## Algo.
 1. [Binary_Search](Algo/Binary_Search/)
+2. [Binary_Search_Tree](Algo/BST/)
