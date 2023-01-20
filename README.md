@@ -8,3 +8,4 @@ Record simple algo. and DS what I've learned, implementing with `cpp` and `pytho
 4. [UnionFind](Union-Find/)
 5. [Trie](Trie/)
 6. [Binary Search](Binary_Search/)
+7. [ListNode](ListNode): LRUCache
