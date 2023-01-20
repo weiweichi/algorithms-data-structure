@@ -9,3 +9,4 @@ Record simple algo. and DS what I've learned, implementing with `cpp` and `pytho
 5. [Trie](Trie/)
 6. [Binary Search](Binary_Search/)
 7. [ListNode](ListNode): LRUCache
+8. [sort](sort): Bubble, Insertion, Selection and Merge Sort `TODO: Quick, Counting and Bucket Sort`
