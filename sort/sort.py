@@ -102,4 +102,30 @@ def quick_sort(arr: List[int]):
     
     helper(0, len(arr) - 1)
     return arr
-print(quick_sort(DATA) == SORTED)
+# print(quick_sort(DATA) == SORTED)
+
+def heap_sort(arr):
+    
+    def heapify():
+        for idx in range(len(arr) - 1, -1, -1):
+            _sift(idx, len(arr))
+
+    def _sift(idx, end):
+        while 1:
+            child = idx * 2 + 1
+            if child >= end:
+                break
+            if child + 1 < end and arr[child] < arr[child+1]:
+                child += 1
+            if arr[idx] < arr[child]:
+                arr[idx], arr[child] = arr[child], arr[idx]
+                idx = child
+            else:
+                break
+
+    heapify()
+    for idx in range(len(arr) - 1, 0, -1):
+        arr[0], arr[idx] = arr[idx], arr[0]
+        _sift(0, idx)
+    return arr
+# print(heap_sort(DATA) == SORTED)

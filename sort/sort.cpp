@@ -103,6 +103,30 @@ void quick_sort(vector<int> &arr) {
     helper(0, arr.size()-1);
 }
 
+void heap_sort(vector<int> &arr) {
+    auto sift = [&](int idx, int end) {
+        int child = idx * 2 + 1;
+        while (child < end) {
+            if (child + 1 < end && arr[child] < arr[child + 1])
+                child++;
+            if (arr[idx] < arr[child]) {
+                swap(arr[idx], arr[child]);
+                idx = child;
+                child = child * 2 + 1;
+            } else {
+                break;
+            }
+        }
+    };
+    int n = arr.size();
+    for (int idx = n / 2; idx >= 0; --idx) 
+        sift(idx, n);
+    for (int i = n - 1; i >= 0; --i) {
+        swap(arr[0], arr[i]);
+        sift(0, i);
+    }
+}
+
 int main() {
     vector<int> DATA = {89, 34, 23, 78, 67, 100, 66, 29, 79, 55, 78, 88, 92, 96, 96, 23};
     vector<int> DATA2 = DATA;
@@ -110,7 +134,10 @@ int main() {
     // insertion_sort(DATA);
     // selection_sort(DATA);
     // merge_sort(DATA);
-    quick_sort(DATA);
+    // quick_sort(DATA);
+    // heap_sort(DATA);
+    // for (int v: DATA)
+    //     cout<<v<<", ";
     sort(DATA2.begin(), DATA2.end());
     bool flag = true;
     for (int i = 0; i < DATA.size(); ++i) {
