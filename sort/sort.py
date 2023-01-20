@@ -70,8 +70,36 @@ def merge(arr: List[int]):
         arr[left: right+1] = new_arr[left: right+1]
     
     helper(0, len(arr) - 1)
-    return new_arr
+    return arr
 # print(merge(DATA) == SORTED)
 
-def quick(arr: List[int]):
-    pass
+def quick_sort(arr: List[int]):
+    def find_pivot(left, right):
+        pivot = (left + right) // 2
+        if arr[left] <= arr[right]:
+            if arr[pivot] <= arr[right]:
+                return pivot if arr[left] <= arr[pivot] else left
+            return right
+        if arr[pivot] <= arr[right]:
+            return right
+        return pivot if arr[left] >= arr[pivot] else left
+    
+    def helper(left, right):
+        if right <= left:
+            return 
+        pivot = find_pivot(left, right)
+
+        p_val = arr[pivot]
+        arr[pivot], arr[right] = arr[right], arr[pivot]
+        curr_idx = left
+        for idx in range(left, right):
+            if arr[idx] <= p_val:
+                arr[curr_idx], arr[idx] = arr[idx], arr[curr_idx]
+                curr_idx += 1
+        arr[curr_idx], arr[right] = arr[right], arr[curr_idx]
+        helper(left, curr_idx-1)
+        helper(curr_idx+1, right)
+    
+    helper(0, len(arr) - 1)
+    return arr
+print(quick_sort(DATA) == SORTED)
