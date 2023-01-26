@@ -129,3 +129,19 @@ def heap_sort(arr):
         _sift(0, idx)
     return arr
 # print(heap_sort(DATA) == SORTED)
+
+def count_sort(arr):
+    maxi = max(arr)
+    mini = min(arr)
+    count = [0] * (maxi - mini + 1)
+    for val in arr:
+        count[val - mini] += 1
+    
+    res = [0] * len(arr)
+    idx = 0
+    for i in range(len(count)):
+        cnt = count[i]
+        res[idx: idx + cnt] = [i + mini] * cnt
+        idx += cnt
+    return res
+print(count_sort(DATA) == SORTED)

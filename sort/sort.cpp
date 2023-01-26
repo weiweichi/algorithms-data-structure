@@ -127,8 +127,25 @@ void heap_sort(vector<int> &arr) {
     }
 }
 
+void count_sort(vector<int> &arr) {
+    int maxi = INT_MIN, mini = INT_MAX;
+    for (auto val: arr) {
+        maxi = max(maxi, val);
+        mini = min(mini, val);
+    }
+    vector<int> count(maxi - mini + 1, 0);
+    for (auto val: arr) {
+        count[val - mini]++;
+    }
+    for (int i = 0, idx = 0; i < count.size(); ++i) {
+        while (count[i]--) {
+            arr[idx++] = i + mini;
+        }
+    }
+}
+
 int main() {
-    vector<int> DATA = {89, 34, 23, 78, 67, 100, 66, 29, 79, 55, 78, 88, 92, 96, 96, 23};
+    vector<int> DATA = {89, 34, 23, 78, 67, 100, 66, 29, 79, 55, 78, 88, 92, 96, 96, 23, 100000};
     vector<int> DATA2 = DATA;
     // bubble_sort(DATA);
     // insertion_sort(DATA);
@@ -136,6 +153,7 @@ int main() {
     // merge_sort(DATA);
     // quick_sort(DATA);
     // heap_sort(DATA);
+    count_sort(DATA);
     // for (int v: DATA)
     //     cout<<v<<", ";
     sort(DATA2.begin(), DATA2.end());

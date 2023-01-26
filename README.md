@@ -10,6 +10,6 @@ Record simple algo. and DS what I've learned, implementing with `cpp` and `pytho
 5. [Trie](Trie/)
 6. [Binary Search](Binary_Search/)
 7. [ListNode](ListNode): LRUCache
-8. [Sort](sort): Bubble, Insertion, Selection, Merge and Quick Sort `TODO: Counting and Bucket Sort`
+8. [Sort](Sort): Bubble, Insertion, Selection, Merge and Quick Sort `TODO: Bucket Sort`
 9. [Heap](Heap): max heap
 10. [Shortest path](Shortest_path): Bellman_Ford, Dijkstra, Floyd-Warshall `TODO: python version`
