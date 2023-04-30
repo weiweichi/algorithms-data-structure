@@ -1,6 +1,7 @@
 # Algo. and DS
 Record simple algo. and DS what I've learned, implementing with `cpp` and `python`.
 
+*   My LeetCode info: [Andy-Chi](https://leetcode.com/Andy-Chi/)
 ## Contents
 **TODO**: KMP algo.
 1. [Tree](Tree/): Binary Tree, n-ary Tree
