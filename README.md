@@ -1,7 +1,11 @@
 # Algo. and DS
 Record simple algo. and DS what I've learned, implementing with `cpp` and `python`.
 
+I will update if I remeber :)
+
 *   My LeetCode info: [Andy-Chi](https://leetcode.com/Andy-Chi/)
+*   The highest contest rating is 2065 (top 3%)
+
 ## Contents
 **TODO**: KMP algo.
 1. [Tree](Tree/): Binary Tree, n-ary Tree
@@ -27,4 +31,3 @@ Record simple algo. and DS what I've learned, implementing with `cpp` and `pytho
         **1579**  Remove Max Number of Edges to Keep Graph Fully Traversable. [file](./problems/1579/). [link](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/description/).
 
         **1697** Checking Existence of Edge Length Limited Paths. [file](./problems/1697/). [link](https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths/).
- 
