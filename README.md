@@ -14,3 +14,16 @@ Record simple algo. and DS what I've learned, implementing with `cpp` and `pytho
 9. [Heap](Heap): max heap
 10. [Shortest path](Shortest_path): Bellman_Ford, Dijkstra, Floyd-Warshall `TODO: python version`
 11. [Maximum_subarray](Maximum_subarray): **1.** Kadane's Algorithm, **2.** max sum subarray with length smaller than K, **3.** max sum circular subarray
+
+
+## Problem list
+
+*   Union-Find
+    *   Hard
+
+        **839** Similar String Groups. [file](./problems/839/). [link](https://leetcode.com/problems/similar-string-groups/).
+
+        **1579**  Remove Max Number of Edges to Keep Graph Fully Traversable. [file](./problems/1579/). [link](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/description/).
+
+        **1697** Checking Existence of Edge Length Limited Paths. [file](./problems/1697/). [link](https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths/).
+ 
