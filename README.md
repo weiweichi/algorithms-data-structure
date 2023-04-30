@@ -1,7 +1,7 @@
 # Algo. and DS
 Record simple algo. and DS what I've learned, implementing with `cpp` and `python`.
 
-I will update if I remeber :)
+I will update if I remeber :upside_down_face:
 
 *   My LeetCode info: [Andy-Chi](https://leetcode.com/Andy-Chi/)
 *   The highest contest rating is 2065 (top 3%)
